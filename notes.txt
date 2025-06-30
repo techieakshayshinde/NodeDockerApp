@@ -1,0 +1,31 @@
+Docker:
+*Why?
+-No "It works on my machine" problems.
+-you don't need to install Node.js on the server-the container has it.
+-makes your app portable,repeatable and cloud-deployable.
+
+
+*What is Docker and its terminologies?
+
+*Docker:
+A tool that packages your app and all its dependencies into a container so it runs the same anywhere.
+
+*Container:
+A lighweight, isolated environment to run software.
+
+*Image:
+A blueprint to create containers. Think of it like a template.
+
+*Dockerfile:
+A script that tells Docker how to build your app's image.
+
+*Docker CLI:
+Command line tool to interact with Docker ( docker build, docker run)
+
+
+//Docker Run Commands for local:
+1. to build:
+docker build -t nodedockerapp
+
+2. to run docker container:
+docker run -p 5000:5000 nodedockerapp
